@@ -1,0 +1,94 @@
+
+.cmp-list {
+
+    float: left;
+    padding: 0;
+
+    .cmp-list__item {
+        list-style: none;
+        float: left;
+        width: 100%;
+        margin-bottom: 1em;
+
+        &::before {
+            content: none;
+            position: unset;
+        }
+    }
+
+    .cmp-list__item-link {
+        font-weight: 600;
+        float: left;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+            .cmp-list__item-title {
+                text-decoration: underline;
+            }
+           
+        }
+        
+    }
+
+    .cmp-list__item-title {
+        width: 100%;
+        float: left;
+     
+    }
+
+    .cmp-list__item-date {
+        width: 100%;
+        float: left;
+        color: $gray;
+        font-size: $font-size-small;
+    }
+
+}
+
+.cmp-list--upnext {
+
+    padding-top: 2rem;
+    float: left;
+    
+    .cmp-list {
+
+        padding-left: 0em;
+        .cmp-list__item {
+            float: left;
+            list-style: none;
+            margin-bottom: 1em;
+            width: 100%;
+        }
+
+        .cmp-list__item-link {
+            font-weight: normal;
+            height: $list-item-height;
+            border-left: $list-item-border;
+
+            &:hover {
+                background: $brand-primary;
+                border-color: $text-color;
+
+                .cmp-list__item-title {
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        .cmp-list__item-title {
+            color: $text-color;
+            padding: 5px;
+            text-transform: uppercase;
+
+        }
+
+        .cmp-list__item-date {
+            color: $gray;
+            font-size: $font-size-xsmall;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+
+    }
+}

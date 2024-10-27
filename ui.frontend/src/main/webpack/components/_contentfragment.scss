@@ -1,0 +1,127 @@
+
+.cmp-contentfragment--contributor {
+
+    .cmp-contentfragment {
+      
+      .cmp-contentfragment__element-title {
+        display: none;
+      }
+  
+      .cmp-contentfragment__element-value {
+        margin: 0;
+  
+        img {
+          width: 100%;
+        }
+      }
+  
+      .cmp-contentfragment__element--fullName {
+        border-bottom: solid 1px $gray-light;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        padding-bottom: 2rem;
+        text-align: center;
+      }
+  
+      .cmp-contentfragment__element--biographyText {
+        padding: 0;
+        margin: 0 2rem;
+  
+        .cmp-contentfragment__element-value {
+          column-count: 2;
+          column-gap: 5rem;
+  
+          img {
+            max-height: 275px;
+            object-fit: cover;
+          }
+  
+          p {
+            line-height: 1.75rem;
+          }
+        }
+      }
+  
+      .cmp-contentfragment__element--pictureReference {
+        display: none;
+      }
+          
+      .cmp-contentfragment__picture {
+        $pictureSize: 300px;
+  
+        display: block;
+        height: $pictureSize;
+        width: $pictureSize;
+        border-radius: calc($pictureSize / 2);
+        border: solid 10px $gray-light;
+        object-fit: cover;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+    }
+  }
+  .cmp-contentfragment {
+
+    .cmp-contentfragment__title {
+        display:none;
+    }
+
+    .cmp-contentfragment__description {
+        display: none;
+    }
+
+    .cmp-contentfragment__element-value {  
+        img {
+          width: 100%;
+        }
+    }
+}
+.cmp-contentfragment--elements {
+
+        
+    .cmp-contentfragment__elements {
+        float: left;
+        width: 100%;
+        display: block;
+
+        .cmp-contentfragment__element {
+            font-family: $font-family-sans-serif;
+            text-transform: uppercase;
+            height: 84px;
+            border-left: $list-item-border;
+            margin-bottom: 1.25em;
+            padding-left: 1em;
+            padding-right: 1em;
+            float: left;
+            width: 100%;
+            
+        }
+
+        .cmp-contentfragment__element-title {
+            color: $gray;
+            font-size: $font-size-xsmall;
+            padding-top: 1em;
+        }
+
+        .cmp-contentfragment__element-value {
+            padding-top: 0.5em;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-small;
+            margin-inline-start: 0px;
+        }
+
+        //mobile
+        @media (max-width: $screen-medium) {
+            .cmp-contentfragment__element {
+                width: unset;
+                border-width: 3px;
+                border-left: none;
+                padding-left: 0em; 
+                padding-right: 2em;               
+            }
+
+        }
+
+    }
+}  

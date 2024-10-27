@@ -1,0 +1,52 @@
+.cmp-separator--light {
+
+    .cmp-separator__horizontal-rule {
+        color: $gray-lighter;
+    }
+
+}
+
+.cmp-separator--dark {
+
+    .cmp-separator__horizontal-rule {
+        color: $gray;
+    }
+
+}
+
+.cmp-separator--hidden {
+    .cmp-separator__horizontal-rule {
+        border: none;
+    }
+}
+
+.cmp-separator {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.cmp-separator__horizontal-rule {
+    border-width: 1px;
+    border-style: solid;
+    color: $gray-light;
+}
+.cmp-separator--space-small {
+    .cmp-separator {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.cmp-separator--space-medium {
+    .cmp-separator {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.cmp-separator--space-large {
+    .cmp-separator {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+}

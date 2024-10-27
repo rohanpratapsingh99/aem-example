@@ -15,6 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-    <filter root="/apps/wknd-packages"/>
-    <filter root="/apps/wknd-vendor-packages"/>
+    <filter root="/apps/journeymate-packages"/>
+    <filter root="/apps/journeymate-vendor-packages"/>
 </workspaceFilter>

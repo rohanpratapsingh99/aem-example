@@ -1,0 +1,62 @@
+
+.cmp-image {
+	
+	.cmp-image__image {
+        margin-top: calc($gutter-padding / 2);
+        margin-bottom: calc($gutter-padding / 2);
+    	width: 100%;
+		height: auto;
+	}
+	
+	.cmp-image__title {
+		text-transform: uppercase;
+		font-size: $font-size-small;
+		margin-top: -0.25em;
+		float: left;
+		font-family: $font-family-sans-serif;
+		font-weight: $font-weight-bold;
+	}
+
+	.cmp-image__image--is-loading {
+		display: flex;
+		background-color: $gray-light;
+		background-image: url('../resources/images/loading-icon.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 60px 60px;
+	}
+	
+}
+.cmp-image--logo {
+
+    .cmp-image__link {
+        border: none;
+    }
+    .cmp-image__image {
+        max-width: 8rem;
+        margin-top: calc($gutter-padding / 2);
+        margin-bottom: calc($gutter-padding / 2);
+    }
+
+    /* Disable lazy loading for logo */
+    .cmp-image  .cmp-image__image--is-loading {
+        background-color: unset;
+        background-image: none;
+    }
+   
+}
+
+@media (max-width: $screen-medium) {
+
+    .cmp-experiencefragment--header {
+
+        .cmp-image--logo {
+
+            .cmp-image__image {
+                max-width: 6rem;
+                margin-left: 2rem;
+                margin-top: .75rem;
+            }
+        }
+    }
+}

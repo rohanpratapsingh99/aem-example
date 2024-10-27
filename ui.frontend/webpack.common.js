@@ -16,6 +16,7 @@ const resolve = {
     })]
 };
 
+
 module.exports = {
     resolve: resolve,
     entry: {

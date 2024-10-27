@@ -1,0 +1,195 @@
+.cmp-layout-container--fixed {
+    padding: 0 $gutter-padding;
+  
+    @media (min-width: $screen-medium + 1) {
+      display:block;
+      max-width:  $max-width !important;
+      float: unset !important;
+      margin: 0 auto !important;
+      clear: both !important; 
+    } 
+   
+  }
+  
+.cmp-layoutcontainer--footer {
+ 
+    background-color: $black;
+    color: $gray-lighter;
+
+    /* Style Text Component */
+    .cmp-text {
+
+        p {
+            line-height: 1.25;
+        }
+
+        a {
+            color: $gray-lighter;
+            text-decoration: underline;
+        }
+    }
+}
+.cmp-layoutcontainer--header {
+    background-color: $body-bg;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+    -webkit-transition: padding-bottom 0s ease, padding-top 0s ;
+    -moz-transition:  padding-bottom 0s ease, padding-top 0s ;
+    -o-transition:  padding-bottom 0s ease, padding-top 0s ;
+    transition:  padding-bottom 0s ease-out, padding-top 0s ease 0s ease-out;
+
+
+    .aem-Grid {
+        @include container-content();
+    }
+
+     /* Tablet */
+     @media (max-width: $screen-medium) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+     }
+}
+
+/* Add Drop shadow on scroll */
+
+.scrolly {
+    .cmp-layoutcontainer--header {
+    
+      -webkit-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
+      -moz-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
+      box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
+      -webkit-transition: padding-bottom 0.5s ease, padding-top 0.5s ;
+      -moz-transition:  padding-bottom 0.5s ease, padding-top 0.5s ;
+      -o-transition:  padding-bottom 0.5s ease, padding-top 0.5s ;
+      transition:  padding-bottom 0.5s ease-out, padding-top 0.5s ease 0.25s ease-out;
+        @media (min-width: $screen-medium +1) {
+            padding-top: 15px;
+            padding-bottom: 5px;
+        }
+    }
+
+}
+.cmp-layout-container--modal {
+    background: $black;
+    box-shadow: 0px 10px 20px $gray;
+    box-sizing: border-box;
+    margin: 2rem;
+    max-width: 450px;
+    // AEM Responsive Grid collides with strong selectors; thus !important
+    padding: 2rem 1.75rem !important;
+  
+    .container {
+      margin-bottom: 1rem;
+    }
+  
+    *, .cmp-text {
+      color: white;
+      font-family: $font-family-sans-serif;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    .cmp-form-text__text {
+      background-color: $black;
+      color: $white;
+    }
+  
+    // Title components
+    .cmp-title__text {
+      font-family: $font-family-serif;
+    }
+  
+    .cmp-text {
+      p {
+        line-height: normal;
+      }
+    }
+  
+    // Modal Button
+    .cmp-button,
+    .cmp-form-button {
+      color: $text-color;
+      background: $brand-primary 0% 0% no-repeat padding-box;
+      border: 0;
+      box-sizing: border-box;
+      display: inline-block;
+      font-size: $font-size-base;
+      font-family: $font-family-sans-serif;
+      font-weight: $font-weight-bold;
+      padding: .75rem 1rem;
+      min-width: 180px;
+      text-align: center;
+      text-transform: uppercase;
+  
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+  
+      .cmp-button__text {
+        color: $text-color;
+      }
+  
+      .cmp-text__text {
+        line-height: 1rem;
+      }
+    }
+  
+    // Modal Separator
+    .cmp-separator {
+      margin: 1rem 0;
+    }
+  
+    .cmp-separator__horizontal-rule {
+      background: $gray;
+      background-image: linear-gradient(to bottom, $gray, $black);
+      border: 0;
+      height: 2px;
+    }
+  
+    // Responsive adjustments
+    @media (max-width: $screen-small) {
+      padding: .5rem .25rem;
+      margin: 0;
+      max-width: 340px;
+    }
+  
+    @media (max-width: $screen-medium) {
+      padding: 1rem .5rem;
+    }
+  }
+  
+  #wknd-modal {
+    display: none;
+    position: fixed;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+  }
+  .cmp-layoutcontainer--utility {
+    min-height: $utility-nav-height;
+    background-color: $black;
+    color:$gray-lighter;
+    font-size: $font-size-small;
+
+    .aem-Grid {
+
+        @media (min-width: $screen-large + 1) {
+            @include container-content();
+           
+        }
+    }
+
+    a {
+        color: $gray-light;
+        font-size: $font-size-small;
+        text-transform: uppercase;
+    }
+
+}
+

@@ -1,0 +1,108 @@
+
+.cmp-text, .cmp-contentfragment {
+
+    ul {
+        display: block;
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        
+        li {
+            padding-left: 12px;
+            &:before {
+                content: $wkndicon-play3;
+                font-family: '#{$icomoon-font-family}' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                font-size: 0.55em;
+                /* Better Font Rendering =========== */
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                position: relative;
+                top: -0.25em;
+                left: -0.75em;
+                
+              }
+        }
+    }
+    
+    ol {
+        display: block;
+        padding-inline-start: 1.5em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        line-height: $line-height-base + .5;
+    }
+}
+
+.cmp-text--quote {
+
+    background-color: $brand-third;
+    margin: 1em 0em;
+
+    .cmp-text {
+          padding: 1em;
+    }
+
+    blockquote {
+          margin: 0;
+          font-size: $font-size-h2;
+          font-family: $font-family-serif;
+          border: none;
+          padding: 14px 14px;
+          margin-bottom: 0.5em;
+
+          &:after {
+                border-bottom: 2px solid $brand-primary;
+                content: '';
+                display: block;
+                width: 80px;
+                position: relative;
+                top: 0.25em;
+          }
+    }
+
+    u {
+          text-decoration: none;
+          font-family: $font-family-sans-serif;
+
+         
+    }
+}
+.cmp-text--font-xsmall {
+    p {
+        font-size: $font-size-xsmall;
+    }
+}
+
+.cmp-text--font-small {
+    p {
+        font-size: $font-size-small;
+    }
+}
+
+.cmp-text--font-default {
+    p {
+        font-size: $font-size-base;
+    }
+}
+
+.cmp-text--font-large {
+    p {
+        font-size: $font-size-large;
+    }
+}

@@ -1,0 +1,67 @@
+.cmp-buildingblock--btn-list {
+
+    > .aem-Grid > .aem-GridColumn.cmp-button--icononly {
+        float: left;
+        width: unset !important;
+        padding-left: 0;
+        padding-right: 0;
+        clear: none;
+    }
+
+    @media (max-width: $screen-medium) {
+        padding-left: $gutter-padding !important;
+        padding-right: $gutter-padding !important;
+    }
+}
+$contributor-img-size: 164px;
+
+.cmp-experience-fragment--contributor {
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+
+    .cmp-title__text {
+        margin-top:0em;
+        margin-bottom: 0.25em;
+    }
+
+    .cmp-image {
+        .cmp-image__image {
+            border-radius: 50%;
+            height:$contributor-img-size;
+            width: $contributor-img-size;
+            object-fit: cover;
+        }
+    }
+
+    .cmp-buildingblock--btn-list {
+        padding-top: 1em;
+            > .aem-Grid {
+                display: flex;
+                justify-content: center;
+            }
+
+    }
+}
+.experiencefragment.cmp-experiencefragment--footer {
+    background-color: $black;
+    color: $gray-light;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+.experiencefragment.cmp-experiencefragment--header {
+    z-index: 1030;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding-left:0px;
+    padding-right:0px;
+}

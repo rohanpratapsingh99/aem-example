@@ -1,0 +1,8 @@
+{
+    "scripts": [
+        "create service user dataWriteService",
+        "set ACL for dataWriteService\n\tallow jcr:all on /content\nend",
+        "set ACL for dataWriteService\n\tallow jcr:read on /etc\nend",
+        "set ACL for dataWriteService\n\tallow jcr:read on /home\nend"
+    ]
+}

@@ -1,0 +1,196 @@
+$default-width: 360px;
+.cmp-languagenavigation--dark {
+
+    .cmp-languagenavigation {
+        background: $black;
+        float:left;
+        color: $gray-light;
+    }
+
+    .cmp-languagenavigation__item-title {
+        color: $gray-light;
+    }
+
+    .cmp-languagenavigation__item-link {
+        color: $gray-lighter;
+    }
+
+    .cmp-languagenavigation__item--level-0 {
+        border-bottom-color: $gray;
+    }
+}
+.cmp-languagenavigation--default {
+
+    .cmp-languagenavigation {
+        text-align: left;
+        width: $default-width;
+    }
+
+    .cmp-languagenavigation__group {
+        list-style: none;
+        margin:0;
+        float: left;
+        padding:0;
+    }
+    
+    .cmp-languagenavigation__item {
+        text-transform: uppercase;
+        display: block;
+        float: left;
+
+    }
+
+    .cmp-languagenavigation__item-title {
+        font-size: $font-size-xsmall;
+        float:left;
+        width:100%;
+        margin-bottom:-5px;
+        padding-left:2px;
+        
+    }
+
+    .cmp-languagenavigation__item-link {
+        font-size: $font-size-small;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .cmp-languagenavigation__item--level-0 { 
+
+        background-repeat: no-repeat;
+        background-size: $country-flag-size;
+        padding: 8px 0px 15px 45px;
+        background-position-y: center;
+        background-position-x: 12px;
+        border-bottom: .25px solid;
+        width: #{'calc(100% - 45px)'};
+
+        /* COUNTRY FLAGS (Show for Level 0 only)*/
+        &.cmp-languagenavigation__item--countrycode-CA {
+            background-image: url('#{$country-flag-path}/CA.svg');
+        }
+
+        &.cmp-languagenavigation__item--countrycode-CH{
+            background-image: url('#{$country-flag-path}/CH.svg');
+        }
+        
+        &.cmp-languagenavigation__item--countrycode-DE {
+            background-image: url('#{$country-flag-path}/DE.svg');
+        }
+
+        &.cmp-languagenavigation__item--countrycode-ES {
+            background-image: url('#{$country-flag-path}/ES.svg');
+        }
+        
+        &.cmp-languagenavigation__item--countrycode-FR {
+            background-image: url('#{$country-flag-path}/FR.svg');
+        }
+        
+        &.cmp-languagenavigation__item--countrycode-IT {
+            background-image: url('#{$country-flag-path}/IT.svg');
+        }
+
+        &.cmp-languagenavigation__item--countrycode-US {
+            background-image: url('#{$country-flag-path}/US.svg');
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .cmp-languagenavigation__item--level-1 {
+        
+        padding-top: 2px;
+        padding-left: 2px;
+
+        &.cmp-languagenavigation__item--active {
+            .cmp-languagenavigation__item-link {
+                text-decoration: underline;
+            }
+        }
+        .cmp-languagenavigation__item-link {
+            border-right: 1px solid;
+            padding-right: 5px;
+            margin-right: 5px;
+        }
+
+        &:last-child {
+            .cmp-languagenavigation__item-link {
+                border-right: none;
+            }
+           
+        }
+    }
+
+   
+  
+
+
+
+}
+.cmp-languagenavigation--header {
+
+    .cmp-languagenavigation {
+        position:fixed;
+        top: 38px;
+        z-index: 999;
+        width: 360px;
+        right: 0;
+        display: none;
+        @include boxShadow();
+        
+        &.showMenu {
+            display: block;
+        }
+    }
+
+    .cmp-languagenavigation--langnavtoggle {
+        a {
+            padding-right: $gutter-padding;
+            background-repeat: no-repeat;
+            background-size: $country-flag-size;
+            padding-left: 35px;
+            background-position-x: 0px;
+            background-position-y: -1px;
+    
+            &::after {
+                border-style: solid;
+                border-width: 0.10em 0.10em 0 0;
+                content: '';
+                display: inline-block;
+                height: 0.45em;
+                left: 0.45em;
+                position: relative;
+                top: 0.35em;
+                transform: rotate(135deg); 
+              
+                vertical-align: top;
+                width: 0.45em;
+            }
+    
+            &.open::after {
+                top: 0.65em;
+                transform: rotate(-45deg);
+            }
+        }
+        @media (max-width: $screen-medium) {
+            text-align: right;
+        }
+
+        @media (max-width: $screen-xsmall) {
+            a {
+                font-size: 0;
+                height: $utility-nav-height;
+                float: right;
+
+                &::after {
+                    font-size: $font-size-small;
+                }
+            }   
+        }
+
+
+    }
+}

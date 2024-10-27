@@ -1,0 +1,30 @@
+{
+    "short_name": "WKND",
+    "name": "WKND Site",
+    "icons": [
+      {
+        "src": "/etc.clientlibs/journeymate/clientlibs/clientlib-site/resources/images/favicons/favicon-16.png",
+        "type": "image/png",
+        "sizes": "16x16"
+      },
+      {
+        "src": "/etc.clientlibs/journeymate/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "/etc.clientlibs/journeymate/clientlibs/clientlib-site/resources/images/favicons/favicon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/etc.clientlibs/journeymate/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/content/journeymate/us/en.html",
+    "background_color": "#FFEA00",
+    "scope": "/content/journeymate",
+    "theme_color": "#FFEA00"
+  }
