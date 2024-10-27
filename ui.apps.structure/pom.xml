@@ -6,18 +6,18 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.aem.example</groupId>
-        <artifactId>aem-example</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>com.adobe.aem.guides</groupId>
+        <artifactId>aem-guides-wknd</artifactId>
+        <version>3.2.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-example.ui.apps.structure</artifactId>
+    <artifactId>aem-guides-wknd.ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>AEM Example - Repository Structure Package</name>
+    <name>WKND Sites Project - UI apps structure</name>
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
         Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.
@@ -35,7 +35,7 @@
                     <filters>
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
-                        <filter><root>/apps/aem-example</root></filter>
+                        <filter><root>/apps/wknd</root></filter>
 
                         <!-- Common overlay roots -->
                         <filter><root>/apps/sling</root></filter>
@@ -46,10 +46,6 @@
 
                         <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>
-
-                        <!-- DAM folder root, will be created via repoinit -->
-                        <filter><root>/content/dam/aem-example</root></filter>
-
                     </filters>
                 </configuration>
             </plugin>

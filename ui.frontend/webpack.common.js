@@ -19,13 +19,16 @@ const resolve = {
 module.exports = {
     resolve: resolve,
     entry: {
-        site: SOURCE_ROOT + '/site/main.ts'
+        site: SOURCE_ROOT + '/site/main.js'
     },
     output: {
-        filename: (chunkData) => {
-            return chunkData.chunk.name === 'dependencies' ? 'clientlib-dependencies/[name].js' : 'clientlib-site/[name].js';
-        },
+        filename: 'clientlib-site/js/[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    optimization: {
+        splitChunks: {
+               chunks: 'all'
+             }
     },
     module: {
         rules: [
@@ -57,12 +60,17 @@ module.exports = {
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins() {
-                                return [
-                                    require('autoprefixer')
-                                ];
-                            }
-                        }
+                            postcssOptions: {
+                              plugins: [
+                                [
+                                  "autoprefixer",
+                                  {
+                                    // Options
+                                  },
+                                ],
+                              ],
+                            },
+                        },
                     },
                     {
                         loader: 'sass-loader',
@@ -74,7 +82,16 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+                use: {
+                  loader: 'file-loader',
+                  options: {
+                    name: '[path][name].[ext]'
+                  }
+                }
+            },
         ]
     },
     plugins: [
@@ -87,7 +104,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site/' }
+                { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site' }
             ]
         })
     ],
