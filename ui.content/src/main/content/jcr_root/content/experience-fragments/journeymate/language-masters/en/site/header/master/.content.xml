@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:tags="[]"
-        cq:template="/conf/journeymate/settings/wcm/templates/xf-web-variation"
+        cq:lastModified="{Date}2024-10-29T00:50:03.285+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/journeymate/settings/wcm/templates/experience-fragment"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
@@ -12,23 +14,93 @@
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="journeymate/components/container"
-            layout="simple">
+            layout="responsiveGrid">
+            <container
+                cq:styleIds="[1568592113898]"
+                jcr:created="{Date}2024-10-29T00:29:22.677+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-10-29T00:31:40.665+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="journeymate/components/container"
+                layout="responsiveGrid">
+                <sign_in_buttons
+                    jcr:created="{Date}2024-10-29T00:29:28.482+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-10-29T00:29:28.482+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="journeymate/components/sign-in-buttons"
+                    greetingLabel="Welcome"
+                    signInLabel="Sign In"
+                    signOutLabel="Sign Out">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="7"/>
+                    </cq:responsive>
+                </sign_in_buttons>
+                <languagenavigation
+                    cq:styleIds="[1568591864735]"
+                    jcr:created="{Date}2024-10-29T00:30:17.832+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-10-29T00:32:29.743+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="journeymate/components/languagenavigation"
+                    navigationRoot="/content/journeymate"
+                    structureDepth="2">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </languagenavigation>
+            </container>
+            <image
+                jcr:created="{Date}2024-10-29T00:34:29.107+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-10-29T00:34:29.107+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="journeymate/components/image">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+            </image>
             <navigation
+                cq:styleIds="[1568591750865]"
+                jcr:created="{Date}2024-10-29T00:34:38.752+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-10-29T00:35:49.656+05:30"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="journeymate/components/navigation"
                 collectAllPages="false"
-                skipNavigationRoot="false"
-                structureDepth="1"
-                structureStart="2"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="journeymate/components/languagenavigation"
-                navigationRoot="/content/journeymate"
-                structureDepth="2"/>
-            <search
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="journeymate/components/search"
-                searchRoot="/content/journeymate/en"/>
+                disableShadowing="false"
+                navigationRoot="/content/journeymate/language-masters/en"
+                structureDepth="1">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="8"/>
+                </cq:responsive>
+            </navigation>
         </root>
+        <container
+            cq:styleIds="[1570043787082]"
+            jcr:created="{Date}2019-09-13T14:22:51.213-07:00"
+            jcr:createdBy="admin"
+            jcr:lastModified="{Date}2019-09-13T14:23:01.260-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="journeymate/components/container"
+            layout="responsiveGrid"/>
     </jcr:content>
 </jcr:root>

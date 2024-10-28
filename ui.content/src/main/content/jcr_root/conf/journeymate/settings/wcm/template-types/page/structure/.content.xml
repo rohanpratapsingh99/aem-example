@@ -11,14 +11,19 @@
             sling:resourceType="journeymate/components/container"
             layout="responsiveGrid">
             <experiencefragment-header
+                cq:styleIds="[1568592491109]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="journeymate/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/journeymate/language-masters/en/site/header/master"/>
+                fragmentVariationPath="/content/experience-fragments/journeymate/us/en/site/header/master"/>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="journeymate/components/container"
-                editable="{Boolean}true"
-                layout="responsiveGrid"/>
+                editable="{Boolean}true"/>
+            <experiencefragment-footer
+                cq:styleIds="[1568592503946]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="journeymate/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/journeymate/us/en/site/footer/master"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">

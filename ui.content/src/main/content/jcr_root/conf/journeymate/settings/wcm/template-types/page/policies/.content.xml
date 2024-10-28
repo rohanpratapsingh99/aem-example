@@ -9,8 +9,16 @@
             cq:policy="journeymate/components/container/policy_1574694950110"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/core/components/policies/mapping">
+            <experiencefragment-header
+                cq:policy="journeymate/components/experiencefragment/policy_1568592468447"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
             <container
-                cq:policy="journeymate/components/container/policy_1574695586800"
+                cq:policy="journeymate/components/container/policy_213106331986985"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping" />
+            <experiencefragment-footer
+                cq:policy="journeymate/components/experiencefragment/policy_1568592468447"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/core/components/policies/mapping"/>
         </root>
