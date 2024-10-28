@@ -15,52 +15,87 @@
  */
 package com.adobe.aem.journeymate.core.servlets;
 
-import com.google.gson.JsonObject;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+
+import javax.servlet.Servlet;
+import javax.servlet.ServletException;
+
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.Servlet;
-import javax.servlet.ServletException;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
+/**
+ * Servlet that writes some sample content into the response. It is mounted for
+ * all resources of a specific Sling resource type. The
+ * {@link SlingSafeMethodsServlet} shall be used for HTTP methods that are
+ * idempotent. For write operations use the {@link SlingAllMethodsServlet}.
+ */
 @Component(
-    service = Servlet.class,
-    property = {
-        "sling.servlet.methods=POST",
-        "sling.servlet.paths=/bin/login"
-    }
-)
-public class LoginServlet extends SlingAllMethodsServlet {
-    
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	    service = Servlet.class,
+	    property = {
+	        "sling.servlet.methods=POST",
+	        "sling.servlet.paths=/bin/loginuser"    }
+	)
+public class LoginApiServlet extends SlingAllMethodsServlet {
 
-	private static final Logger LOG = LoggerFactory.getLogger(LoginServlet.class);
+    private static final long serialVersionUID = 1L;
+
+	private static final Logger LOG = LoggerFactory.getLogger(LoginApiServlet.class);
 
     @Reference
     private ResourceResolverFactory resourceResolverFactory;
-
     @Override
-    protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("application/json");
+    protected void doPost(final SlingHttpServletRequest request,
+            final SlingHttpServletResponse response) throws ServletException, IOException {
+    	response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
 
-        String userId = request.getParameter("userId");
-        String password = request.getParameter("password");
+        // Parse JSON from the request body
+        StringBuilder requestBody = new StringBuilder();
+        try (BufferedReader reader = request.getReader()) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                requestBody.append(line);
+            }
+        } catch (IOException e) {
+            LOG.error("Error reading request body", e);
+            response.setStatus(SlingHttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"error\":\"Invalid request format\"}");
+            return;
+        }
 
-        if (userId == null || password == null) {
+        JsonObject jsonInput;
+        try {
+            jsonInput = JsonParser.parseString(requestBody.toString()).getAsJsonObject();
+        } catch (Exception e) {
+            LOG.error("Error parsing JSON", e);
+            response.setStatus(SlingHttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"error\":\"Invalid JSON format\"}");
+            return;
+        }
+
+        // Extract userId and password from JSON input
+        String userId = jsonInput.has("username") ? jsonInput.get("username").getAsString() : null;
+        String password = jsonInput.has("password") ? jsonInput.get("password").getAsString() : null;
+
+
+        if (StringUtils.isBlank(userId)|| StringUtils.isBlank(password)) {
             response.setStatus(SlingHttpServletResponse.SC_BAD_REQUEST);
             response.getWriter().write("{\"error\":\"Missing userId or password\"}");
             return;
@@ -91,11 +126,11 @@ public class LoginServlet extends SlingAllMethodsServlet {
             }
 
             // If user is found
-            if (userResource != null) {
+            if (Objects.nonNull(userResource) && !StringUtils.isBlank(userLevel)) {
                 JsonObject jsonResponse = new JsonObject();
                 jsonResponse.addProperty("userType", userType);
                 jsonResponse.addProperty("userLevel", userLevel);
-                jsonResponse.addProperty("userId", userId);
+                jsonResponse.addProperty("username", userId);
 
                 response.getWriter().write(jsonResponse.toString());
             } else {
@@ -109,7 +144,6 @@ public class LoginServlet extends SlingAllMethodsServlet {
             response.getWriter().write("{\"error\":\"Internal server error\"}");
         }
     }
-
     private boolean passwordMatches(Resource userResource, String password) {
         // Placeholder for actual password matching logic, retrieve password property from userResource
         String storedPassword = userResource.getValueMap().get("password", String.class);

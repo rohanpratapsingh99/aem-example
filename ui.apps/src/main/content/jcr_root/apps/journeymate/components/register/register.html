@@ -1,0 +1,44 @@
+ <div
+ 	  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+      class="jj" id="log-in">
+    <div class="cmp-title">
+      <h1 class="cmp-title__text">Register</h1>
+</div>
+<div class="cmp-container">
+      <div class="text">
+            <div class="cmp-form-text">
+                  <input class="cmp-form-text__text" type="text" id="username" placeholder="USERNAME" required>
+            </div>
+      </div>
+      <div class="text">
+            <div class="cmp-form-text">
+                  <input class="cmp-form-text__text" type="text" id="firstname" placeholder="FIRST NAME" required>
+            </div>
+      </div>
+      <div class="text">
+            <div class="cmp-form-text">
+                  <input class="cmp-form-text__text" type="text" id="lastname" placeholder="LAST NAME" required>
+            </div>
+      </div>
+      <div class="text">
+            <div class="cmp-form-text">
+                  <input class="cmp-form-text__text" type="password" id="password" placeholder="PASSWORD" required>
+            </div>
+      </div>
+      <div class="text">
+            <div class="cmp-form-text">
+                  <input class="cmp-form-text__text" type="tel" id="mobile" placeholder="MOBILE NUMBER" required>
+            </div>
+      </div>
+      <div class="text">
+            <div class="cmp-form-text">
+                  <input class="cmp-form-text__text" type="email" id="email" placeholder="EMAIL" required>
+            </div>
+      </div>
+      <div class="button">
+            <button type="submit" data-login="/content/journeymate/language-masters/en/login.html" class="cmp-form-button">REGISTER</button>
+      </div>
+</div>
+
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>

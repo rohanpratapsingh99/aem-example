@@ -1,0 +1,30 @@
+ <div
+ 	  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+      class="jj" id="log-in">
+     <div class="cmp-title">
+            <h1 class="cmp-title__text">Sign In</h1>
+      </div>
+      <div class="cmp-containter">
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="text" id="username" placeholder="USERNAME" required>
+                  </div>
+            </div>
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="text" id="password" placeholder="PASSWORD" required>
+                  </div>
+            </div>
+            <div class="text">
+                  <div class="cmp-text">
+                        <p>
+                              <a href="/content/journeymate/language-masters/en/register-user.html">Register User</a>
+                        </p>
+                  </div>
+            </div>
+            <div class="button">
+                  <button type="SUBMIT" data-homepage="/content/journeymate/language-masters/en/homepage.html" class="cmp-form-button">SIGN IN</button>
+            </div>
+      </div>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
