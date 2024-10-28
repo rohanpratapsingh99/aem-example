@@ -19,7 +19,6 @@
     "/content/_cq_graphql/wknd-shared/endpoint.json"
   ],
   "filter.methods":[
-    "POST",
     "PUT",
     "DELETE"
   ],

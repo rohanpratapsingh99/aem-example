@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/journeymate" mode="merge"/>
+    <filter root="/conf/journeymate"/>
     <filter root="/content/journeymate" mode="merge"/>
     <filter root="/content/dam/journeymate/asset.jpg" mode="merge"/>
     <filter root="/content/experience-fragments/journeymate" mode="merge"/>

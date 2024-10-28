@@ -1,44 +1,101 @@
- <div
- 	  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-      class="jj" id="log-in">
-    <div class="cmp-title">
-      <h1 class="cmp-title__text">Register</h1>
-</div>
-<div class="cmp-container">
-      <div class="text">
-            <div class="cmp-form-text">
-                  <input class="cmp-form-text__text" type="text" id="username" placeholder="USERNAME" required>
+<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" class="jj" id="log-in">
+      <div class="cmp-title">
+            <h1 class="cmp-title__text">Register</h1>
+      </div>
+      <div class="cmp-container">
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="text" id="username" placeholder="USERNAME" required>
+                  </div>
+            </div>
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="text" id="firstname" placeholder="FIRST NAME" required>
+                  </div>
+            </div>
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="text" id="lastname" placeholder="LAST NAME" required>
+                  </div>
+            </div>
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="password" id="password" placeholder="PASSWORD"
+                              required>
+                  </div>
+            </div>
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="tel" id="mobile" placeholder="MOBILE NUMBER" required>
+                  </div>
+            </div>
+            <div class="text">
+                  <div class="cmp-form-text">
+                        <input class="cmp-form-text__text" type="email" id="email" placeholder="EMAIL" required>
+                  </div>
+            </div>
+            <div class="button">
+                  <button type="submit" data-login="/content/journeymate/language-masters/en/login.html"
+                        class="cmp-form-button" id="register-btn">REGISTER</button>
             </div>
       </div>
-      <div class="text">
-            <div class="cmp-form-text">
-                  <input class="cmp-form-text__text" type="text" id="firstname" placeholder="FIRST NAME" required>
-            </div>
-      </div>
-      <div class="text">
-            <div class="cmp-form-text">
-                  <input class="cmp-form-text__text" type="text" id="lastname" placeholder="LAST NAME" required>
-            </div>
-      </div>
-      <div class="text">
-            <div class="cmp-form-text">
-                  <input class="cmp-form-text__text" type="password" id="password" placeholder="PASSWORD" required>
-            </div>
-      </div>
-      <div class="text">
-            <div class="cmp-form-text">
-                  <input class="cmp-form-text__text" type="tel" id="mobile" placeholder="MOBILE NUMBER" required>
-            </div>
-      </div>
-      <div class="text">
-            <div class="cmp-form-text">
-                  <input class="cmp-form-text__text" type="email" id="email" placeholder="EMAIL" required>
-            </div>
-      </div>
-      <div class="button">
-            <button type="submit" data-login="/content/journeymate/language-masters/en/login.html" class="cmp-form-button">REGISTER</button>
-      </div>
-</div>
 
 </div>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
+
+<script>
+      document.addEventListener('DOMContentLoaded', () => {
+            const registerForm = document.getElementById('register-form')
+            const registerButton = document.getElementById('register-btn');
+
+            // Accessing data attributes:
+            const loginPagePath = registerButton.dataset.login;
+
+            const register = async () => {
+                  const email = document.getElementById('email').value;
+                  const username = document.getElementById('username').value;
+                  const password = document.getElementById('password').value;
+                  const firstname = document.getElementById('firstname').value;
+                  const lastname = document.getElementById('lastname').value;
+                  const mobile = document.getElementById('mobile').value;
+
+                  // send API call
+                  const user = {
+                        email,
+                        username,
+                        password,
+                        firstname,
+                        lastname,
+                        mobile,
+                  }
+
+                  try {
+                        const response = await fetch('http://localhost:4502/bin/registeruser', {
+                              method: 'POST',
+                              headers: {
+                                    'Content-Type': 'application/json'
+                              },
+                              body: JSON.stringify(user)
+                        });
+
+                        if (response.ok) {
+                              alert('Registration Successfull please login');
+                              window.location.href = loginPagePath;
+                        }
+                        else {
+                              alert('register failed')
+                        }
+                  }
+                  catch (error) {
+                        console.error('Error:', error);
+                        alert('an error occuered');
+                  }
+            }
+
+            registerButton.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  register();
+
+            });
+      })
+</script>

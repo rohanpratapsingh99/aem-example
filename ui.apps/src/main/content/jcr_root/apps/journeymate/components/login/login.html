@@ -1,7 +1,5 @@
- <div
- 	  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-      class="jj" id="log-in">
-     <div class="cmp-title">
+<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" class="jj" id="log-in">
+      <div class="cmp-title">
             <h1 class="cmp-title__text">Sign In</h1>
       </div>
       <div class="cmp-containter">
@@ -23,8 +21,56 @@
                   </div>
             </div>
             <div class="button">
-                  <button type="SUBMIT" data-homepage="/content/journeymate/language-masters/en/homepage.html" class="cmp-form-button">SIGN IN</button>
+                  <button type="SUBMIT" data-homepage="/content/journeymate/language-masters/en/homepage.html"
+                        class="cmp-form-button" id="login-btn">SIGN IN</button>
             </div>
       </div>
 </div>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
+<script>
+      document.addEventListener('DOMContentLoaded', () => {
+            const loginButton = document.getElementById('login-btn');
+            const loginForm = document.getElementById('login-form');
+            const userNameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+
+            // Accessing data attributes:
+            const homepagePath = loginButton.dataset.homepage;
+
+            const login = async () => {
+                  const username = userNameInput.value;
+                  const password = passwordInput.value;
+
+                  console.log({ username, password });
+
+                  try {
+                        const response = await fetch('http://localhost:4502/bin/loginuser', {
+                              method: 'POST',
+                              headers: {
+                                    'Content-Type': 'application/json'
+                              },
+                              body: JSON.stringify({ username, password }),
+                        });
+
+                        if (response.ok) {
+                              const user = await response.json();
+                              sessionStorage.setItem('role', user.userType);
+                              sessionStorage.setItem('username', user.username);
+                              window.location.href = user.userType === 'admin' ? 'admin.html' : homepagePath
+                        }
+                        else {
+                              alert('invalid cred');
+                        }
+                  }
+                  catch (error) {
+                        console.error('Error:', error);
+                        alert('an error occured');
+                  }
+            }
+
+            loginButton.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  login();
+            });
+      })
+</script>
