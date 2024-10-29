@@ -1,0 +1,29 @@
+.wknd-sign-in-form {
+  .aem-GridColumn {
+    padding: 0;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.wknd-sign-in-buttons {
+  text-align: right;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  
+  @media (max-width: $screen-large) {
+    text-align: left;
+  }
+}
+
+.wknd-sign-in-buttons__button {
+  // Start hidden, let JavaScript display the correct one
+  display: none;
+  text-transform: uppercase;
+  color: $gray-lighter;
+}
+
+.wknd-sign-in-buttons__button--greeting {
+  text-align: left;
+  padding-right: $gutter-padding;
+}

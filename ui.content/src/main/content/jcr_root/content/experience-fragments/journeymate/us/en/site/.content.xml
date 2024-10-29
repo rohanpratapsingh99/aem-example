@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     cq:adobeTargetExportFormat="html"
     jcr:primaryType="sling:OrderedFolder"
-    jcr:title="Site">
+    jcr:title="site">
     <header/>
     <footer/>
+    <sign-in/>
+    <sign-out/>
+    <header-without-navigation/>
+    <footer-without-navigation/>
+    <jcr:content
+        cq:lastModified="{Date}2024-10-29T14:51:07.768+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2024-10-29T14:51:07.772+05:30"
+        cq:lastRolledoutBy="admin"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="nt:unstructured">
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/experience-fragments/journeymate/language-masters/en/site"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
 </jcr:root>

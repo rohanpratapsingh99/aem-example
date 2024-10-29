@@ -2,7 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-10-29T00:51:31.227+05:30"
+        cq:lastModified="{Date}2024-10-29T14:55:53.610+05:30"
         cq:lastModifiedBy="admin"
         cq:tags="[experience-fragments:variation/web]"
         cq:template="/conf/journeymate/settings/wcm/templates/experience-fragment"
@@ -28,15 +28,17 @@
                     cq:styleIds="[1568592012684]"
                     jcr:created="{Date}2019-09-18T13:56:22.669-07:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-07-10T13:29:23.641-07:00"
+                    jcr:lastModified="{Date}2024-10-29T12:54:09.545+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="journeymate/components/image"
                     alt="WKND Logo"
                     altValueFromDAM="false"
                     displayPopupTitle="false"
-                    fileReference="/content/dam/wknd/en/site/wknd-logo-light.svg"
+                    fileReference="/content/dam/journeymate/white-jm.svg"
+                    imageFromPageImage="false"
                     isDecorative="false"
+                    linkTarget="_self"
                     linkURL="#"
                     titleValueFromDAM="false">
                     <cq:responsive jcr:primaryType="nt:unstructured">
@@ -56,16 +58,17 @@
                     cq:styleIds="[1568591758631]"
                     jcr:created="{Date}2019-09-18T13:57:03.947-07:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2024-10-29T00:51:17.959+05:30"
+                    jcr:lastModified="{Date}2024-10-29T14:55:53.518+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="journeymate/components/navigation"
                     accessibilityLabel="Footer navigation"
                     collectAllPages="false"
                     disableShadowing="false"
-                    navigationRoot="/content/journeymate/language-masters/en"
+                    navigationRoot="/content/journeymate/language-masters/en/master"
                     skipNavigationRoot="false"
-                    structureDepth="1">
+                    structureDepth="1"
+                    structureStart="0">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"

@@ -33,7 +33,7 @@
                                         fieldDescription="The Experience Fragment to display as a modal when the Sign In button is clicked"
                                         fieldLabel="Sign In Experience Fragment"
                                         name="./signInXfPath"
-                                        rootPath="/content/experience-fragments/wknd"/>
+                                        rootPath="/content/experience-fragments/journeymate"/>
                                     <sign-out-label
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -45,7 +45,7 @@
                                         fieldDescription="The Experience Fragment to display as a modal when the Sign Out button is clicked"
                                         fieldLabel="Sign Out Experience Fragment"
                                         name="./signOutXfPath"
-                                        rootPath="/content/experience-fragments/wknd"/>
+                                        rootPath="/content/experience-fragments/journeymate"/>
                                     <greeting-label
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"

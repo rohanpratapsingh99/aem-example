@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="82130c68-d22e-4d44-853b-c0008c652cc2">
+    <jcr:content
+        cq:name="mumbai"
+        cq:parentPath="/content/dam/journeymate/indian-adventures/mumbai"
+        jcr:lastModified="{Date}2024-10-29T15:35:34.724+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Mumbai"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-10-29T15:35:34.724+05:30">
+        <data
+            cq:model="/conf/journeymate/settings/dam/cfm/models/adventure"
+            jcr:primaryType="nt:unstructured"
+            _strucVersion="{Long}1">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                activity="Social"
+                activity_x0040_LastModified="{Date}2024-10-29T15:35:34.511+05:30"
+                activity_x0040_LastModifiedBy="admin"
+                adventureType="Day Trip"
+                adventureType_x0040_LastModified="{Date}2024-10-29T15:35:34.508+05:30"
+                adventureType_x0040_LastModifiedBy="admin"
+                description="&lt;p>A UNESCO World Heritage Site and one of Mumbai's most iconic landmarks, this historic railway station is an architectural marvel. Built in 1887, it showcases a blend of Victorian Gothic Revival and traditional Indian architectural styles. The terminus is a bustling hub of activity, serving as a major transportation center for the city. Its intricate façade, detailed carvings, and grand interiors make it a must-visit attraction.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2024-10-29T15:35:34.508+05:30"
+                description_x0040_LastModifiedBy="admin"
+                difficulty="Beginner"
+                difficulty_x0040_LastModified="{Date}2024-10-29T15:35:34.513+05:30"
+                difficulty_x0040_LastModifiedBy="admin"
+                gearList="&lt;ul>&#xa;&lt;li>Base Layer Tops – 1 -4 non-cotton base layer tops&lt;/li>&#xa;&lt;li>Base Layer Bottoms – 1 – 4 non-cotton base layer bottoms&lt;/li>&#xa;&lt;li>Camera&lt;/li>&#xa;&lt;/ul>&#xa;"
+                gearList_x0040_ContentType="text/html"
+                gearList_x0040_LastModified="{Date}2024-10-29T15:35:34.517+05:30"
+                gearList_x0040_LastModifiedBy="admin"
+                groupSize_x0040_LastModified="{Date}2024-10-29T15:27:28.710+05:30"
+                itinerary="&lt;p>&lt;b>Chhatrapati Shivaji Maharaj Terminus&lt;/b>&lt;/p>&#xa;&lt;p>A UNESCO World Heritage Site and one of Mumbai's most iconic landmarks, this historic railway station is an architectural marvel. Built in 1887, it showcases a blend of Victorian Gothic Revival and traditional Indian architectural styles. The terminus is a bustling hub of activity, serving as a major transportation center for the city. Its intricate façade, detailed carvings, and grand interiors make it a must-visit attraction.&lt;/p>&#xa;&lt;p>&lt;b>Marine Drive&lt;/b>&lt;/p>&#xa;&lt;p>Marine Drive Also known as the &amp;quot;Queen's Necklace,&amp;quot; Marine Drive is a picturesque coastal road in Mumbai, stretching along the Arabian Sea. Its curved shape, illuminated by streetlights at night, resembles a string of pearls, hence the nickname. It's a popular spot for locals and tourists alike to take leisurely walks, enjoy breathtaking sunsets, and soak in the views of the sea. The promenade is lined with art deco buildings, luxury hotels, and bustling cafes, making it a vibrant and iconic part of Mumbai's landscape.&lt;/p>&#xa;&lt;h3>Gateway of India&lt;/h3>&#xa;&lt;p>A monumental arch located on the waterfront of Mumbai, overlooking the Arabian Sea. Built in 1924, it serves as a symbol of India's rich colonial history and architectural grandeur. The Gateway of India is not only a significant historical landmark but also a bustling tourist destination, with visitors flocking to admire its majestic structure and enjoy boat rides in the nearby harbor. It holds cultural and historical significance, marking the arrival of King George V and Queen Mary in India in 1911. Today, it stands as an iconic symbol of Mumbai and a must-visit attraction for tourists.&lt;/p>&#xa;&lt;h3>Haji Ali Dargah&lt;/h3>&#xa;&lt;p>Travel with your family to one of Mumbai's most prominent religious shrines - the Haji Ali Dargah, which holds Sayed Peer Haji Ali Shah Bukhari's tomb. This magnificent structure is composed of white marble and represents the Indo-Islamic architectural style. One of the main tourist attractions of this place is that it is constructed far out into the sea.&lt;/p>&#xa;"
+                itinerary_x0040_ContentType="text/html"
+                itinerary_x0040_LastModified="{Date}2024-10-29T15:35:34.516+05:30"
+                itinerary_x0040_LastModifiedBy="admin"
+                price="{Double}100.0"
+                price_x0040_LastModified="{Date}2024-10-29T15:35:34.514+05:30"
+                price_x0040_LastModifiedBy="admin"
+                primaryImage="/content/dam/journeymate/indian-adventures/mumbai/marin-drive.jpg"
+                primaryImage_x0040_LastModified="{Date}2024-10-29T15:35:34.515+05:30"
+                primaryImage_x0040_LastModifiedBy="admin"
+                slug="mumbai"
+                slug_x0040_LastModified="{Date}2024-10-29T15:35:34.507+05:30"
+                slug_x0040_LastModifiedBy="admin"
+                title="Mumbai"
+                title_x0040_LastModified="{Date}2024-10-29T15:35:34.505+05:30"
+                title_x0040_LastModifiedBy="admin"
+                tripLength="2 hours"
+                tripLength_x0040_LastModified="{Date}2024-10-29T15:35:34.509+05:30"
+                tripLength_x0040_LastModifiedBy="admin"/>
+        </data>
+        <indexedData jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[dam:IndexedFragmentData]"
+                jcr:primaryType="nt:unstructured"
+                jcr:uuid="52920294-6759-4b08-9aaa-050ae7e70954"
+                _x0040_string_x0040_model="/conf/journeymate/settings/dam/cfm/models/adventure"
+                _x0040_stringArray_x0040_variations="[]"
+                double_x0040_price="{Double}100.0"
+                string_x0040_activity="Social"
+                string_x0040_adventureType="Day Trip"
+                string_x0040_description="&lt;p>A UNESCO World Heritage Site and one of Mumbai's most iconic landmarks, this historic railway station is an architectural marvel. Built in 1887, it showcases a blend of Victorian Gothic Revival and traditional Indian architectural styles. The terminus is a bustling hub of activity, serving as a major transportation center for the city. Its intricate façade, detailed carvings, and grand interiors make it a must-visit attraction.&lt;/p>&#xa;"
+                string_x0040_difficulty="Beginner"
+                string_x0040_gearList="&lt;ul>&#xa;&lt;li>Base Layer Tops – 1 -4 non-cotton base layer tops&lt;/li>&#xa;&lt;li>Base Layer Bottoms – 1 – 4 non-cotton base layer bottoms&lt;/li>&#xa;&lt;li>Camera&lt;/li>&#xa;&lt;/ul>&#xa;"
+                string_x0040_itinerary="&lt;p>&lt;b>Chhatrapati Shivaji Maharaj Terminus&lt;/b>&lt;/p>&#xa;&lt;p>A UNESCO World Heritage Site and one of Mumbai's most iconic landmarks, this historic railway station is an architectural marvel. Built in 1887, it showcases a blend of Victorian Gothic Revival and traditional Indian architectural styles. The terminus is a bustling hub of activity, serving as a major transportation center for the city. Its intricate façade, detailed carvings, and grand interiors make it a must-visit attraction.&lt;/p>&#xa;&lt;p>&lt;b>Marine Drive&lt;/b>&lt;/p>&#xa;&lt;p>Marine Drive Also known as the &amp;quot;Queen's Necklace,&amp;quot; Marine Drive is a picturesque coastal road in Mumbai, stretching along the Arabian Sea. Its curved shape, illuminated by streetlights at night, resembles a string of pearls, hence the nickname. It's a popular spot for locals and tourists alike to take leisurely walks, enjoy breathtaking sunsets, and soak in the views of the sea. The promenade is lined with art deco buildings, luxury hotels, and bustling cafes, making it a vibrant and iconic part of Mumbai's landscape.&lt;/p>&#xa;&lt;h3>Gateway of India&lt;/h3>&#xa;&lt;p>A monumental arch located on the waterfront of Mumbai, overlooking the Arabian Sea. Built in 1924, it serves as a symbol of India's rich colonial history and architectural grandeur. The Gateway of India is not only a significant historical landmark but also a bustling tourist destination, with visitors flocking to admire its majestic structure and enjoy boat rides in the nearby harbor. It holds cultural and historical significance, marking the arrival of King George V and Queen Mary in India in 1911. Today, it stands as an iconic symbol of Mumbai and a must-visit attraction for tourists.&lt;/p>&#xa;&lt;h3>Haji Ali Dargah&lt;/h3>&#xa;&lt;p>Travel with your family to one of Mumbai's most prominent religious shrines - the Haji Ali Dargah, which holds Sayed Peer Haji Ali Shah Bukhari's tomb. This magnificent structure is composed of white marble and represents the Indo-Islamic architectural style. One of the main tourist attractions of this place is that it is constructed far out into the sea.&lt;/p>&#xa;"
+                string_x0040_slug="mumbai"
+                string_x0040_title="Mumbai"
+                string_x0040_tripLength="2 hours"/>
+        </indexedData>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

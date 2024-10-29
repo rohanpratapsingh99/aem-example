@@ -4,5 +4,6 @@
     jcr:primaryType="cq:Page">
     <page-content/>
     <experience-fragment/>
+	<login-register-user-template/>
     <rep:policy/>
 </jcr:root>

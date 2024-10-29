@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-10-29T14:51:08.326+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2024-10-29T14:51:08.334+05:30"
+        cq:lastRolledoutBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/journeymate/settings/wcm/templates/experience-fragment"
+        cq:xfVariantType="web"
+        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Sign In"
+        sling:resourceType="journeymate/components/xfpage">
+        <root
+            cq:lastRolledout="{Date}2024-10-29T14:51:08.293+05:30"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="journeymate/components/container"
+            layout="responsiveGrid">
+            <login
+                cq:lastRolledout="{Date}2024-10-29T14:51:08.318+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2024-10-29T13:14:46.134+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-10-29T14:51:08.301+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="journeymate/components/login"
+                adminPostLoginPath="/content/journeymate/language-masters/en/admin-console"
+                loginLabel="Sign In"
+                passwordLabel="Password"
+                registerPath="/content/journeymate/language-masters/en/signup"
+                registerUser="New to Journey? Sign Up"
+                usernameLabel="Username"
+                userPostLoginPath="/content/journeymate/language-masters/en/master/home"/>
+        </root>
+        <container
+            cq:lastRolledout="{Date}2024-10-29T14:51:08.334+05:30"
+            cq:lastRolledoutBy="admin"
+            cq:styleIds="[1570043787082]"
+            jcr:created="{Date}2019-09-13T14:22:51.213-07:00"
+            jcr:createdBy="admin"
+            jcr:lastModified="{Date}2024-10-29T14:51:08.323+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="journeymate/components/container"
+            layout="responsiveGrid"/>
+    </jcr:content>
+</jcr:root>

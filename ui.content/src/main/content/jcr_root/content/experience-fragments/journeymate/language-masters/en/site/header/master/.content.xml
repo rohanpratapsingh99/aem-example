@@ -2,7 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-10-29T00:50:03.285+05:30"
+        cq:lastModified="{Date}2024-10-29T14:56:03.439+05:30"
         cq:lastModifiedBy="admin"
         cq:tags="[experience-fragments:variation/web]"
         cq:template="/conf/journeymate/settings/wcm/templates/experience-fragment"
@@ -27,13 +27,15 @@
                 <sign_in_buttons
                     jcr:created="{Date}2024-10-29T00:29:28.482+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2024-10-29T00:29:28.482+05:30"
+                    jcr:lastModified="{Date}2024-10-29T13:08:41.509+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="journeymate/components/sign-in-buttons"
                     greetingLabel="Welcome"
                     signInLabel="Sign In"
-                    signOutLabel="Sign Out">
+                    signInXfPath="/content/experience-fragments/journeymate/language-masters/en/site/sign-in/master"
+                    signOutLabel="Sign Out"
+                    signOutXfPath="/content/experience-fragments/journeymate/language-masters/en/site/sign-out/master">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
@@ -62,10 +64,18 @@
             <image
                 jcr:created="{Date}2024-10-29T00:34:29.107+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2024-10-29T00:34:29.107+05:30"
+                jcr:lastModified="{Date}2024-10-29T12:44:57.819+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="journeymate/components/image">
+                sling:resourceType="journeymate/components/image"
+                alt="logo"
+                altValueFromDAM="false"
+                displayPopupTitle="true"
+                fileReference="/content/dam/journeymate/black-jm.svg"
+                imageFromPageImage="false"
+                isDecorative="false"
+                linkTarget="_self"
+                titleValueFromDAM="true">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
@@ -77,14 +87,15 @@
                 cq:styleIds="[1568591750865]"
                 jcr:created="{Date}2024-10-29T00:34:38.752+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2024-10-29T00:35:49.656+05:30"
+                jcr:lastModified="{Date}2024-10-29T14:56:03.360+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="journeymate/components/navigation"
                 collectAllPages="false"
                 disableShadowing="false"
-                navigationRoot="/content/journeymate/language-masters/en"
-                structureDepth="1">
+                navigationRoot="/content/journeymate/language-masters/en/master"
+                structureDepth="1"
+                structureStart="0">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"

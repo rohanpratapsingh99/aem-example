@@ -127,7 +127,7 @@ public class ImageListImpl implements ImageList {
     }
 
     private class ImageListItemImpl implements ImageList.ListItem {
-        private static final String IMAGE_RESOURCE_TYPE = "wknd/components/image";
+        private static final String IMAGE_RESOURCE_TYPE = "journeymate/components/image";
         private static final String IMAGE_LIST_ITEM_SUFFIX = "image-list-item";
 
         private final com.adobe.cq.wcm.core.components.models.ListItem wrappedListItem;

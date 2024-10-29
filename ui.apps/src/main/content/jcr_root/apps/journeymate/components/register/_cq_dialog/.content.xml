@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Register"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <header
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Configuration"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <register
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Register CTA Label"
+                                        required="{Boolean}true"
+                                        name="./registerLabel"/>
+                                    <post-register-path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Post Register Login Page"
+                                        name="./loginPath"
+                                        required="{Boolean}true"
+                                        rootPath="/content/journeymate"/>
+                                    <username
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="username Label"
+                                        required="{Boolean}true"
+                                        name="./usernameLabel"/>
+                                    <firstname
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="First Name Label"
+                                        required="{Boolean}true"
+                                        name="./firstnameLabel"/>
+                                    <lastname-label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Last Name Label"
+                                        required="{Boolean}true"
+                                        name="./lastnameLabel"/>
+                                    <email
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Email Label"
+                                        required="{Boolean}true"
+                                        name="./emailLabel"/>
+                                    <mobile-label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Mobile Label"
+                                        required="{Boolean}true"
+                                        name="./mobileLabel"/>
+                                    <password-label
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Password Label"
+                                        required="{Boolean}true"
+                                        name="./passwordLabel"/>
+                                </items>
+                            </column>
+                        </items>
+                    </header>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

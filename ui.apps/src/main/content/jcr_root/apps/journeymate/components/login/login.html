@@ -5,24 +5,25 @@
       <div class="cmp-containter">
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="text" id="username" placeholder="USERNAME" required>
+                        <input class="cmp-form-text__text" type="text" id="username" placeholder="${properties.usernameLabel}" required>
                   </div>
             </div>
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="text" id="password" placeholder="PASSWORD" required>
+                        <input class="cmp-form-text__text" type="text" id="password" placeholder="${properties.passwordLabel}" required>
                   </div>
             </div>
             <div class="text">
                   <div class="cmp-text">
                         <p>
-                              <a href="/content/journeymate/language-masters/en/register-user.html">Register User</a>
+                              <a href="${properties.registerPath @ selectors='content', extension = 'html'}">${properties.registerUser}</a>
                         </p>
                   </div>
             </div>
             <div class="button">
-                  <button type="SUBMIT" data-homepage="/content/journeymate/language-masters/en/homepage.html"
-                        class="cmp-form-button" id="login-btn">SIGN IN</button>
+                  <button type="SUBMIT" data-homepage="${properties.userPostLoginPath @ selectors='content', extension = 'html'}"
+                        data-adminHomepage="${properties.adminPostLoginPath @ selectors='content', extension = 'html'}"
+                        class="cmp-form-button" id="login-btn">${properties.loginLabel}</button>
             </div>
       </div>
 </div>

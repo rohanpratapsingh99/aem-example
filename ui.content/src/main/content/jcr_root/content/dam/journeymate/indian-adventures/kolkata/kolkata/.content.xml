@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="89bd3e80-e634-4d6e-b79b-55745af587c0">
+    <jcr:content
+        cq:name="kolkata"
+        cq:parentPath="/content/dam/journeymate/indian-adventures/kolkata"
+        jcr:lastModified="{Date}2024-10-29T15:47:35.768+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Kolkata"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-10-29T15:47:35.768+05:30">
+        <data
+            cq:model="/conf/journeymate/settings/dam/cfm/models/adventure"
+            jcr:primaryType="nt:unstructured"
+            _strucVersion="{Long}1">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                activity="Social"
+                activity_x0040_LastModified="{Date}2024-10-29T15:45:36.212+05:30"
+                activity_x0040_LastModifiedBy="admin"
+                adventureType="Day Trip"
+                adventureType_x0040_LastModified="{Date}2024-10-29T15:45:36.211+05:30"
+                adventureType_x0040_LastModifiedBy="admin"
+                description="&lt;p>Kolkata, city, capital of&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/West-Bengal&quot;>West Bengal&lt;/a>&amp;nbsp;state, and former capital (1772–1911) of British&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/India&quot;>India&lt;/a>. It is one of India’s largest cities and one of its major ports. The city is centred on the east bank of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/Hugli-River&quot;>Hugli (Hooghly) River&lt;/a>, once the main channel of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/Ganges-River&quot;>Ganges (Ganga) River&lt;/a>, about 96 miles (154 km) upstream from the head of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/Bay-of-Bengal&quot;>Bay of Bengal&lt;/a>; there the port city developed as a point of transshipment from water to land and from river to sea. A city of&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/dictionary/commerce&quot;>commerce&lt;/a>, transport, and manufacture, Kolkata is the dominant urban centre of eastern India.&lt;/p>&#xa;&lt;p>The city’s former name, Calcutta, is an Anglicized version of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/topic/Bengali-language&quot;>Bengali&lt;/a>&amp;nbsp;name Kalikata. According to some, Kalikata is derived from the Bengali word Kalikshetra, meaning “Ground of (the goddess) Kali.” Some say the city’s name derives from the location of its original settlement on the bank of a canal (&lt;i>khal&lt;/i>). A third opinion traces it to the Bengali words for lime (calcium oxide;&amp;nbsp;&lt;i>kali&lt;/i>) and burnt shell (&lt;i>kata&lt;/i>), since the area was noted for the manufacture of shell lime. In 2001 the government of West Bengal officially changed the name of the city to Kolkata. Area city, 40 square miles (104 square km); urban agglom., 533 square miles (1,380 square km). Pop. (2011) 4,486,679; urban agglom., 14,057,991.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2024-10-29T15:47:35.711+05:30"
+                description_x0040_LastModifiedBy="admin"
+                difficulty="Beginner"
+                difficulty_x0040_LastModified="{Date}2024-10-29T15:45:36.214+05:30"
+                difficulty_x0040_LastModifiedBy="admin"
+                gearList="&lt;ul>&#xa;&lt;li>Camera&lt;/li>&#xa;&lt;li>Id cards&lt;/li>&#xa;&lt;li>Water Bottle&lt;/li>&#xa;&lt;/ul>&#xa;"
+                gearList_x0040_ContentType="text/html"
+                gearList_x0040_LastModified="{Date}2024-10-29T15:45:36.217+05:30"
+                gearList_x0040_LastModifiedBy="admin"
+                groupSize_x0040_LastModified="{Date}2024-10-29T15:42:44.082+05:30"
+                itinerary="&lt;p>&lt;b>Victoria Memorial&lt;/b>&lt;/p>&#xa;&lt;p>The Victoria Memorial is a large marble building, which is considered to be the pride of Kolkata. Built between 1906 and 1921, it is dedicated to the memory of Queen Victoria. Now, it is a museum and a popular tourist spot under the Ministry of Culture.&lt;/p>&#xa;&lt;p>&lt;b>Fort William&lt;/b>&lt;/p>&#xa;&lt;p>Fort William is a fort built in Kolkata on the eastern banks of the River Hooghly, the major distributary of Ganges. The magnificent structure is spread over 70.9 acres and is embellished with hundreds of arched windows that overlook lush green gardens.&amp;nbsp;Meticulous stonework adorns the surface of the building.&lt;/p>&#xa;&lt;p>&lt;b>Belur Mutt&lt;/b>&lt;/p>&#xa;&lt;p>Belur Mutt is the headquarters of the Ramakrishna Math and Mission, founded by Swami Vivekananda. Situated on the west bank of Hooghly River, the temple is prominent for its architecture that embraces Hindu, Christian and Islamic styles and stands as an icon of unity of all religions.&lt;/p>&#xa;"
+                itinerary_x0040_ContentType="text/html"
+                itinerary_x0040_LastModified="{Date}2024-10-29T15:45:36.216+05:30"
+                itinerary_x0040_LastModifiedBy="admin"
+                price="{Double}500.0"
+                price_x0040_LastModified="{Date}2024-10-29T15:45:36.215+05:30"
+                price_x0040_LastModifiedBy="admin"
+                primaryImage_x0040_LastModified="{Date}2024-10-29T15:42:44.082+05:30"
+                slug="kolkata"
+                slug_x0040_LastModified="{Date}2024-10-29T15:45:36.209+05:30"
+                slug_x0040_LastModifiedBy="admin"
+                title="Kolkata"
+                title_x0040_LastModified="{Date}2024-10-29T15:45:36.207+05:30"
+                title_x0040_LastModifiedBy="admin"
+                tripLength="2 hours"
+                tripLength_x0040_LastModified="{Date}2024-10-29T15:45:36.211+05:30"
+                tripLength_x0040_LastModifiedBy="admin"/>
+        </data>
+        <indexedData jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[dam:IndexedFragmentData]"
+                jcr:primaryType="nt:unstructured"
+                jcr:uuid="871adc9f-49f3-4c9d-8cf2-f0457161ba67"
+                _x0040_string_x0040_model="/conf/journeymate/settings/dam/cfm/models/adventure"
+                _x0040_stringArray_x0040_variations="[]"
+                double_x0040_price="{Double}500.0"
+                string_x0040_activity="Social"
+                string_x0040_adventureType="Day Trip"
+                string_x0040_description="&lt;p>Kolkata, city, capital of&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/West-Bengal&quot;>West Bengal&lt;/a>&amp;nbsp;state, and former capital (1772–1911) of British&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/India&quot;>India&lt;/a>. It is one of India’s largest cities and one of its major ports. The city is centred on the east bank of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/Hugli-River&quot;>Hugli (Hooghly) River&lt;/a>, once the main channel of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/Ganges-River&quot;>Ganges (Ganga) River&lt;/a>, about 96 miles (154 km) upstream from the head of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/place/Bay-of-Bengal&quot;>Bay of Bengal&lt;/a>; there the port city developed as a point of transshipment from water to land and from river to sea. A city of&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/dictionary/commerce&quot;>commerce&lt;/a>, transport, and manufacture, Kolkata is the dominant urban centre of eastern India.&lt;/p>&#xa;&lt;p>The city’s former name, Calcutta, is an Anglicized version of the&amp;nbsp;&lt;a href=&quot;https://www.britannica.com/topic/Bengali-language&quot;>Bengali&lt;/a>&amp;nbsp;name Kalikata. According to some, Kalikata is derived from the Bengali word Kalikshetra, meaning “Ground of (the goddess) Kali.” Some say the city’s name derives from the location of its original settlement on the bank of a canal (&lt;i>khal&lt;/i>). A third opinion traces it to the Bengali words for lime (calcium oxide;&amp;nbsp;&lt;i>kali&lt;/i>) and burnt shell (&lt;i>kata&lt;/i>), since the area was noted for the manufacture of shell lime. In 2001 the government of West Bengal officially changed the name of the city to Kolkata. Area city, 40 square miles (104 square km); urban agglom., 533 square miles (1,380 square km). Pop. (2011) 4,486,679; urban agglom., 14,057,991.&lt;/p>&#xa;"
+                string_x0040_difficulty="Beginner"
+                string_x0040_gearList="&lt;ul>&#xa;&lt;li>Camera&lt;/li>&#xa;&lt;li>Id cards&lt;/li>&#xa;&lt;li>Water Bottle&lt;/li>&#xa;&lt;/ul>&#xa;"
+                string_x0040_itinerary="&lt;p>&lt;b>Victoria Memorial&lt;/b>&lt;/p>&#xa;&lt;p>The Victoria Memorial is a large marble building, which is considered to be the pride of Kolkata. Built between 1906 and 1921, it is dedicated to the memory of Queen Victoria. Now, it is a museum and a popular tourist spot under the Ministry of Culture.&lt;/p>&#xa;&lt;p>&lt;b>Fort William&lt;/b>&lt;/p>&#xa;&lt;p>Fort William is a fort built in Kolkata on the eastern banks of the River Hooghly, the major distributary of Ganges. The magnificent structure is spread over 70.9 acres and is embellished with hundreds of arched windows that overlook lush green gardens.&amp;nbsp;Meticulous stonework adorns the surface of the building.&lt;/p>&#xa;&lt;p>&lt;b>Belur Mutt&lt;/b>&lt;/p>&#xa;&lt;p>Belur Mutt is the headquarters of the Ramakrishna Math and Mission, founded by Swami Vivekananda. Situated on the west bank of Hooghly River, the temple is prominent for its architecture that embraces Hindu, Christian and Islamic styles and stands as an icon of unity of all religions.&lt;/p>&#xa;"
+                string_x0040_slug="kolkata"
+                string_x0040_title="Kolkata"
+                string_x0040_tripLength="2 hours"/>
+        </indexedData>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

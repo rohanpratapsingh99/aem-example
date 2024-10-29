@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="22503bcc-a259-4c87-ac5a-fe6d935ead53">
+    <jcr:content
+        cq:name="kashmir"
+        cq:parentPath="/content/dam/journeymate/indian-adventures/kashmir"
+        jcr:lastModified="{Date}2024-10-29T15:51:50.616+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Kashmir"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-10-29T15:51:50.616+05:30">
+        <data
+            cq:model="/conf/journeymate/settings/dam/cfm/models/adventure"
+            jcr:primaryType="nt:unstructured"
+            _strucVersion="{Long}1">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                activity="Surfing"
+                activity_x0040_LastModified="{Date}2024-10-29T15:50:23.459+05:30"
+                activity_x0040_LastModifiedBy="admin"
+                adventureType="Day Trip"
+                adventureType_x0040_LastModified="{Date}2024-10-29T15:50:23.458+05:30"
+                adventureType_x0040_LastModifiedBy="admin"
+                description="&lt;p>Kashmir is the northernmost geographical region of the Indian subcontinent. Until the mid-19th century, the term &amp;quot;Kashmir&amp;quot; denoted only the Kashmir Valley between the Great Himalayas and the Pir Panjal Range.&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2024-10-29T15:50:23.458+05:30"
+                description_x0040_LastModifiedBy="admin"
+                difficulty="Intermediate"
+                difficulty_x0040_LastModified="{Date}2024-10-29T15:50:23.459+05:30"
+                difficulty_x0040_LastModifiedBy="admin"
+                gearList="&lt;ul>&#xa;&lt;li>Woolen Clothes&lt;/li>&#xa;&lt;li>Unbrella&lt;/li>&#xa;&lt;li>Snow protection&lt;/li>&#xa;&lt;li>Camera&lt;/li>&#xa;&lt;li>ID Proofs&lt;/li>&#xa;&lt;/ul>&#xa;"
+                gearList_x0040_ContentType="text/html"
+                gearList_x0040_LastModified="{Date}2024-10-29T15:50:23.461+05:30"
+                gearList_x0040_LastModifiedBy="admin"
+                groupSize_x0040_LastModified="{Date}2024-10-29T15:48:11.206+05:30"
+                itinerary="&lt;ul>&#xa;&lt;li>&lt;h4>Dal Lake&lt;/h4>&#xa;&lt;p>It is an enthralling lake famous for its Shikara ride. Enveloped in astounding natural beauty, the lake is a big hit with travellers as well as locals for spending evenings capturing heart-warming hues of sunset on the waters against the mountainous backdrop. Anybody visiting Srinagar looks forward to this experience. The floating markets on Dal Lake make the shopping experience interesting and exciting!&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Tulip Garden&lt;/h4>&#xa;&lt;p>Promise, you will gape in awe at the sight of the colourful tulips spread across 30 hectares in this world-famous garden. You will feel as if you have landed in paradise! Surrounded by mountains, it is the largest Tulip garden in Asia which opens from March to April. The garden is dotted with 15 lakh tulips with 68 different varieties of tulips. The garden has Dal Lake on one side and the Zabarwan Hills on the other.&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Shalimar Bagh&lt;/h4>&#xa;&lt;p>Established in 1619 by the Mughal emperor Jehangir, the Shalimar Bagh is a must-visit&amp;nbsp;&lt;b>attraction of Srinagar&lt;/b>. Its fountains, gorgeous trees, variety of flowers that blossom in spring and autumn and plenty of tranquillity make it a famous garden of Kashmir.&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Shankaracharya Temple&lt;/h4>&#xa;&lt;p>According to the legends, it is the oldest temple in the valley. It is dedicated to Lord Shiva. The great saint Adi Shankaracharya attained spiritual enlightenment at this place and hence it attracts people from far and wide. Offering a bird’s eye view of the city, this temple is located on the Shankaracharya hill at a height of 1100 feet above sea level.&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Nishat Bagh&lt;/h4>&#xa;&lt;p>Impeccably laid out against the mountain background, Nishat Bagh, also known as the ‘Garden of Bliss’, is one of the famous Mughal gardens. A visit to this garden located on the banks of the Dal Lake will treat your eyes with beautiful terraces, fruit &amp;amp; chinar trees, and colourful flowerbeds. Take a leisurely walk or just sit in one place and enjoy the natural beauty.&lt;/p>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;"
+                itinerary_x0040_ContentType="text/html"
+                itinerary_x0040_LastModified="{Date}2024-10-29T15:51:50.558+05:30"
+                itinerary_x0040_LastModifiedBy="admin"
+                price="{Double}1000.0"
+                price_x0040_LastModified="{Date}2024-10-29T15:50:23.460+05:30"
+                price_x0040_LastModifiedBy="admin"
+                primaryImage="/content/dam/journeymate/indian-adventures/kashmir/Shikara-boats-floating-on-Dal-Lake.jpg"
+                primaryImage_x0040_LastModified="{Date}2024-10-29T15:51:50.554+05:30"
+                primaryImage_x0040_LastModifiedBy="admin"
+                slug="kashmir"
+                slug_x0040_LastModified="{Date}2024-10-29T15:50:23.457+05:30"
+                slug_x0040_LastModifiedBy="admin"
+                title="Kashmir"
+                title_x0040_LastModified="{Date}2024-10-29T15:50:23.456+05:30"
+                title_x0040_LastModifiedBy="admin"
+                tripLength="24hours"
+                tripLength_x0040_LastModified="{Date}2024-10-29T15:50:23.458+05:30"
+                tripLength_x0040_LastModifiedBy="admin"/>
+        </data>
+        <indexedData jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[dam:IndexedFragmentData]"
+                jcr:primaryType="nt:unstructured"
+                jcr:uuid="0bcd25d6-bfa3-45f8-b410-45d4a2b6476e"
+                _x0040_string_x0040_model="/conf/journeymate/settings/dam/cfm/models/adventure"
+                _x0040_stringArray_x0040_variations="[]"
+                double_x0040_price="{Double}1000.0"
+                string_x0040_activity="Surfing"
+                string_x0040_adventureType="Day Trip"
+                string_x0040_description="&lt;p>Kashmir is the northernmost geographical region of the Indian subcontinent. Until the mid-19th century, the term &amp;quot;Kashmir&amp;quot; denoted only the Kashmir Valley between the Great Himalayas and the Pir Panjal Range.&lt;/p>&#xa;"
+                string_x0040_difficulty="Intermediate"
+                string_x0040_gearList="&lt;ul>&#xa;&lt;li>Woolen Clothes&lt;/li>&#xa;&lt;li>Unbrella&lt;/li>&#xa;&lt;li>Snow protection&lt;/li>&#xa;&lt;li>Camera&lt;/li>&#xa;&lt;li>ID Proofs&lt;/li>&#xa;&lt;/ul>&#xa;"
+                string_x0040_itinerary="&lt;ul>&#xa;&lt;li>&lt;h4>Dal Lake&lt;/h4>&#xa;&lt;p>It is an enthralling lake famous for its Shikara ride. Enveloped in astounding natural beauty, the lake is a big hit with travellers as well as locals for spending evenings capturing heart-warming hues of sunset on the waters against the mountainous backdrop. Anybody visiting Srinagar looks forward to this experience. The floating markets on Dal Lake make the shopping experience interesting and exciting!&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Tulip Garden&lt;/h4>&#xa;&lt;p>Promise, you will gape in awe at the sight of the colourful tulips spread across 30 hectares in this world-famous garden. You will feel as if you have landed in paradise! Surrounded by mountains, it is the largest Tulip garden in Asia which opens from March to April. The garden is dotted with 15 lakh tulips with 68 different varieties of tulips. The garden has Dal Lake on one side and the Zabarwan Hills on the other.&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Shalimar Bagh&lt;/h4>&#xa;&lt;p>Established in 1619 by the Mughal emperor Jehangir, the Shalimar Bagh is a must-visit&amp;nbsp;&lt;b>attraction of Srinagar&lt;/b>. Its fountains, gorgeous trees, variety of flowers that blossom in spring and autumn and plenty of tranquillity make it a famous garden of Kashmir.&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Shankaracharya Temple&lt;/h4>&#xa;&lt;p>According to the legends, it is the oldest temple in the valley. It is dedicated to Lord Shiva. The great saint Adi Shankaracharya attained spiritual enlightenment at this place and hence it attracts people from far and wide. Offering a bird’s eye view of the city, this temple is located on the Shankaracharya hill at a height of 1100 feet above sea level.&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;h4>Nishat Bagh&lt;/h4>&#xa;&lt;p>Impeccably laid out against the mountain background, Nishat Bagh, also known as the ‘Garden of Bliss’, is one of the famous Mughal gardens. A visit to this garden located on the banks of the Dal Lake will treat your eyes with beautiful terraces, fruit &amp;amp; chinar trees, and colourful flowerbeds. Take a leisurely walk or just sit in one place and enjoy the natural beauty.&lt;/p>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;"
+                string_x0040_slug="kashmir"
+                string_x0040_title="Kashmir"
+                string_x0040_tripLength="24hours"/>
+        </indexedData>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

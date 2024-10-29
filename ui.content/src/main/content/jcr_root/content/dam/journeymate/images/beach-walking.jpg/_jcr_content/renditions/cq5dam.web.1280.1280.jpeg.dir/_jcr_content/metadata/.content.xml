@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    dam:processingId="e4c28ef5-a6b7-4fe5-ab25-2f1cf48ca4fa"
+    dam:sha1="160de06c23dc72aba48222a988b29341856b3ee8"
+    dam:size="{Long}99342"
+    dc:format="image/jpeg"
+    jcr:primaryType="nt:unstructured"
+    tiff:ImageLength="{Long}853"
+    tiff:ImageWidth="{Long}1280"/>

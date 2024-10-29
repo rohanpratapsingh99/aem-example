@@ -1,42 +1,41 @@
 <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" class="jj" id="log-in">
       <div class="cmp-title">
-            <h1 class="cmp-title__text">Register</h1>
+            <h1 class="cmp-title__text">${properties.registerLabel} User</h1>
       </div>
       <div class="cmp-container">
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="text" id="username" placeholder="USERNAME" required>
+                        <input class="cmp-form-text__text" type="text" id="username" placeholder="${properties.usernameLabel}" required>
                   </div>
             </div>
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="text" id="firstname" placeholder="FIRST NAME" required>
+                        <input class="cmp-form-text__text" type="text" id="firstname" placeholder="${properties.firstnameLabel}" required>
                   </div>
             </div>
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="text" id="lastname" placeholder="LAST NAME" required>
+                        <input class="cmp-form-text__text" type="text" id="lastname" placeholder="${properties.lastnameLabel}" required>
                   </div>
             </div>
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="password" id="password" placeholder="PASSWORD"
-                              required>
+                        <input class="cmp-form-text__text" type="password" id="password" placeholder="${properties.passwordLabel}" required>
                   </div>
             </div>
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="tel" id="mobile" placeholder="MOBILE NUMBER" required>
+                        <input class="cmp-form-text__text" type="tel" id="mobile" placeholder="${properties.mobileLabel}" required>
                   </div>
             </div>
             <div class="text">
                   <div class="cmp-form-text">
-                        <input class="cmp-form-text__text" type="email" id="email" placeholder="EMAIL" required>
+                        <input class="cmp-form-text__text" type="email" id="email" placeholder="${properties.emailLabel}" required>
                   </div>
             </div>
             <div class="button">
-                  <button type="submit" data-login="/content/journeymate/language-masters/en/login.html"
-                        class="cmp-form-button" id="register-btn">REGISTER</button>
+                  <button type="submit" data-login="${properties.loginPath @ selectors='content', extension = 'html'}"
+                        class="cmp-form-button" id="register-btn">${properties.registerLabel}</button>
             </div>
       </div>
 
